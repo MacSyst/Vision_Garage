@@ -4,9 +4,9 @@ Config.Locale = 'en'
 
 Vision = {}
 
-Vision.Debug = true -- Enable this for debugging file Name
+Vision.Debug = false -- Enable this for debugging file Name
 Vision.DrawDistance = 10.0 -- Distance from player to show marker
-Vision.DiscordNotify = true -- Enable this for Webook
+Vision.DiscordNotify = false -- Enable this for Webook
 Vision.Webhook = '' -- Insert your Webhook here
 
 Vision.Markers = {
