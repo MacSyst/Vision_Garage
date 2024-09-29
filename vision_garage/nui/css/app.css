@@ -1,0 +1,151 @@
+@font-face {
+  font-family: roboto;
+  src: url("../roboto.ttf");
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: roboto;
+}
+
+#cursor {
+  position: absolute;
+  z-index: 999999;
+  display: none;
+}
+
+#container {
+  position: absolute;
+  background-color: rgba(87, 0, 145, 0.800);
+  border-radius: 10px;
+  height: 700px;
+  width: 980px;
+  top: 40%;
+  left: 40%;
+  margin: -250px 0 0 -300px;
+  cursor: default;
+  display: flex;
+  flex-direction: unset;
+}
+
+#header {
+  color: white;
+  font-size: 44px;
+  border-radius: 0px 0px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+#header .title {
+  padding: 50px;
+}
+
+#header ul {
+  font-size: 15px;
+  margin-top: -150px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+
+.clear-both {
+  clear: both;
+}
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.right-side {
+  width: 50%;
+}
+
+.content {
+  width: 100%;
+  margin: 20px;
+  color: white;
+  height: 655px;
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.webgl {
+  position: fixed;
+  left: 0;
+  top: 0;
+  outline: none;
+}
+
+.content .vehicle-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+
+.vehicle-listing {
+  display: inline-block;
+  flex-direction: row;
+  border: 1px solid #4825aa;
+  border-radius: 3px;
+  margin: 5px;
+  padding: 20px 35px;
+  font-size: 18px;
+  text-align: center;
+  width: 229px;
+  transition: 0.5s;
+}
+
+.vehicle-listing div {
+  display: flow-root;
+  justify-content: space-between;
+  align-content: space-between;
+}
+
+.vehicle-listing strong {
+  display: inline-block;
+}
+
+.vehicle-listing:hover {
+  background: #6100b159;
+  border: 1px solid #6100b1;
+  transition: 0.5s;
+}
+
+.unstyled-button {
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.vehicle-action {
+  background-color: #5b208b;
+  border-radius: 3px;
+  border: 1px solid #8c00ff;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 20px 30px;
+  margin: 15px;
+  text-shadow: -1px 1px 2px #00000026;
+  transition: 0.5s;
+}
+
+.vehicle-action:hover {
+  transform: scale(0.9);
+  transition: 0.5s;
+}
